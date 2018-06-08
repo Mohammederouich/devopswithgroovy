@@ -11,7 +11,7 @@ job('samplephpwebsiteJobBranch1') {
         }
 
     triggers{
-        scm('H/30s * * * *')
+        scm('H/30 * * * *')
     }
     steps {
         dockerBuildAndPublish {
